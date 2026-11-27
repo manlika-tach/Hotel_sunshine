@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>รายการจองห้องพักทั้งหมด — Sunshine Boutique Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="index.html">Sunshine</a>
+      <button class="nav__toggle" type="button" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="rooms.html">ห้องพักทั้งหมด</a></li>
+        <li><a href="order.html">จองห้องพัก</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container container--wide">
+        <h1>รายการจองห้องพักทั้งหมด</h1>
+        <p>เรียงจากรายการล่าสุดขึ้นก่อน เลื่อนตารางไปทางขวาเพื่อดูข้อมูลทั้งหมด</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--wide">
+        <div class="table-wrap">
+          <table class="data-table" id="ordersTable">
+            <thead>
+              <tr>
+                <th scope="col">วันเวลาที่จอง</th>
+                <th scope="col">ชื่อ-นามสกุล</th>
+                <th scope="col">เลขบัตรประชาชน</th>
+                <th scope="col">พาสปอร์ต</th>
+                <th scope="col">สัญชาติ</th>
+                <th scope="col">หมายเลขห้อง</th>
+                <th scope="col">ประเภทห้องพัก</th>
+                <th scope="col">จำนวนผู้เข้าพัก</th>
+                <th scope="col">Check-in</th>
+                <th scope="col">Check-out</th>
+                <th scope="col">ประเภทวีซ่า</th>
+                <th scope="col">การชำระเงิน</th>
+                <th scope="col">อีเมล</th>
+                <th scope="col">เบอร์โทร</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">Sunshine</span>
+        <ul class="footer__links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="rooms.html">ห้องพักทั้งหมด</a></li>
+          <li><a href="order.html">จองห้องพัก</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">© 2026 Sunshine Boutique Hotel</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

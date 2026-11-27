@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunshine Boutique Hotel — พักกายพักใจท่ามกลางพื้นที่สีเขียว</title>
+  <meta name="description" content="Sunshine บูทีคโฮเทลที่ออกแบบมาเพื่อวันพักผ่อนที่เป็นกันเองเหมือนอยู่บ้าน ท่ามกลางพื้นที่สีเขียวร่มรื่นและแสงแดดอบอุ่น">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="index.html">Sunshine</a>
+      <button class="nav__toggle" type="button" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html" aria-current="page">หน้าแรก</a></li>
+        <li><a href="rooms.html">ห้องพักทั้งหมด</a></li>
+        <li><a href="order.html">จองห้องพัก</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero: ใส่ภาพบรรยากาศที่ images/hero.jpg (ถ้ายังไม่มีภาพ จะแสดงเป็นสีเขียวเข้มแทน) -->
+    <section class="hero hero--home" style="--hero-image: url('images/hero.jpg');">
+      <div class="container">
+        <h1>พักกายพักใจท่ามกลางพื้นที่สีเขียวอันร่มรื่นและแสงแดดอบอุ่น ที่ Sunshine บูทีคโฮเทลที่ออกแบบมาเพื่อวันพักผ่อนที่เป็นกันเองเหมือนอยู่บ้าน</h1>
+        <div class="hero__actions">
+          <a class="btn btn--ghost" href="rooms.html">เลือกดูห้องพัก</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- บรรยากาศแต่ละชั้น -->
+    <section class="section" id="floors">
+      <div class="container">
+        <div class="section__head">
+          <h2>บรรยากาศแต่ละชั้น</h2>
+          <p class="section__lead">สามชั้น สามจังหวะของการพักผ่อน ตั้งแต่ใกล้สวนที่สุดไปจนถึงมุมสงบบนสุดของโรงแรม</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="floor-item" data-type="standard">
+            <h3>ชั้น 1</h3>
+            <span class="tag">ห้อง 100–106</span>
+            <p>สัมผัสความสดชื่นของพื้นที่สีเขียวได้ทันทีที่ก้าวออกจากห้อง โดดเด่นด้วยความสะดวกสบายในการเข้า-ออก เชื่อมต่อกับพื้นที่ส่วนกลางและสวนร่มรื่นได้อย่างใกล้ชิด</p>
+          </article>
+
+          <article class="floor-item" data-type="suite">
+            <h3>ชั้น 2</h3>
+            <span class="tag">ห้อง 200–204</span>
+            <p>ยกระดับความเป็นส่วนตัวท่ามกลางร่มไม้ในระดับสายตา มอบบรรยากาศที่เงียบสงบและผ่อนคลาย เหมาะสำหรับการพักผ่อนอย่างแท้จริงโดยไม่ห่างจากความสะดวกสบาย</p>
+          </article>
+
+          <article class="floor-item" data-type="deluxe">
+            <h3>ชั้น 3</h3>
+            <span class="tag">ห้อง 300–304</span>
+            <p>มุมพักผ่อนที่สงบและเป็นส่วนตัวที่สุดของโรงแรม เปิดรับแสงธรรมชาติและชมวิวมุมสูงที่โอบล้อมด้วยต้นไม้ ให้คุณดื่มด่ำกับความเงียบสงบได้อย่างเต็มที่</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ประเภทห้องพัก -->
+    <section class="section section--cream" id="room-types">
+      <div class="container">
+        <div class="section__head">
+          <h2>ห้องพักสามระดับ</h2>
+          <p class="section__lead">เลือกการ์ดเพื่อดูห้องทั้งหมดในประเภทนั้น</p>
+        </div>
+
+        <div class="grid grid--3">
+          <a class="room-card" data-type="standard" href="rooms.html?type=standard">
+            <div class="room-card__media">
+              <img src="images/standard.jpg" alt="ห้อง Standard" loading="lazy">
+            </div>
+            <div class="room-card__body">
+              <div class="room-card__meta">
+                <h3 class="room-card__title">Standard</h3>
+                <span class="tag">ชั้น 1</span>
+              </div>
+              <hr class="room-card__rule">
+              <p class="room-card__desc">ห้องพักดีไซน์อบอุ่นทันสมัยที่จัดสรรพื้นที่ได้อย่างลงตัว มาพร้อมสิ่งอำนวยความสะดวกครบครัน ตอบโจทย์วันพักผ่อนที่เน้นความคล่องตัวและคุ้มค่าในบรรยากาศร่มรื่น</p>
+              <div class="room-card__footer">
+                <div class="price">฿2,100 <small>/ คืน</small></div>
+                <span class="btn btn--ghost">ดูห้อง Standard</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="room-card" data-type="suite" href="rooms.html?type=suite">
+            <div class="room-card__media">
+              <img src="images/suite.jpg" alt="ห้อง Suite" loading="lazy">
+            </div>
+            <div class="room-card__body">
+              <div class="room-card__meta">
+                <h3 class="room-card__title">Suite</h3>
+                <span class="tag">ชั้น 2</span>
+              </div>
+              <hr class="room-card__rule">
+              <p class="room-card__desc">เติมเต็มความสุขในวันหยุดด้วยพื้นที่ใช้สอยที่กว้างขวางและแบ่งสัดส่วนอย่างชัดเจน ให้คุณเอนกายพักผ่อนแบบชิลล์ๆ ท่ามกลางความสบายที่เหนือระดับในราคาที่จับต้องได้</p>
+              <div class="room-card__footer">
+                <div class="price">฿4,200 <small>/ คืน</small></div>
+                <span class="btn btn--ghost">ดูห้อง Suite</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="room-card" data-type="deluxe" href="rooms.html?type=deluxe">
+            <div class="room-card__media">
+              <img src="images/deluxe.jpg" alt="ห้อง Deluxe" loading="lazy">
+            </div>
+            <div class="room-card__body">
+              <div class="room-card__meta">
+                <h3 class="room-card__title">Deluxe</h3>
+                <span class="tag">ชั้น 3</span>
+              </div>
+              <hr class="room-card__rule">
+              <p class="room-card__desc">สัมผัสประสบการณ์การพักผ่อนระดับพรีเมียมในห้องพักที่ดีที่สุดของ Sunshine โดดเด่นด้วยวิวทิวทัศน์ที่สวยงามและบรรยากาศเป็นส่วนตัวสูงสุด เพื่อรางวัลชีวิตที่คุ้มค่าในทุกวินาทีที่เข้าพัก</p>
+              <div class="room-card__footer">
+                <div class="price">฿5,100 <small>/ คืน</small></div>
+                <span class="btn btn--ghost">ดูห้อง Deluxe</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">Sunshine</span>
+        <ul class="footer__links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="rooms.html">ห้องพักทั้งหมด</a></li>
+          <li><a href="order.html">จองห้องพัก</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">© 2026 Sunshine Boutique Hotel</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

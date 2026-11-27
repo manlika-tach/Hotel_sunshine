@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>จองห้องพัก — Sunshine Boutique Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="index.html">Sunshine</a>
+      <button class="nav__toggle" type="button" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="rooms.html">ห้องพักทั้งหมด</a></li>
+        <li><a href="order.html" aria-current="page">จองห้องพัก</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>จองห้องพัก</h1>
+        <p>กรอกข้อมูลผู้เข้าพักและรายละเอียดการเข้าพัก เมื่อยืนยันแล้วจะได้ใบเสร็จทันที</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="orderForm" class="form-card" autocomplete="on">
+
+          <!-- 1) ข้อมูลผู้เข้าพัก -->
+          <div class="form-section">
+            <h2 class="form-section__title">ข้อมูลผู้เข้าพัก</h2>
+            <div class="form-grid">
+              <div class="field field--full">
+                <label for="fullName">ชื่อ-นามสกุล</label>
+                <input class="input" type="text" id="fullName" name="fullName" required autocomplete="name">
+              </div>
+
+              <div class="field">
+                <label for="ThaiNationIDCard">หมายเลขบัตรประชาชน</label>
+                <input class="input" type="text" id="ThaiNationIDCard" name="ThaiNationIDCard" inputmode="numeric" maxlength="13" pattern="\d{13}" title="ตัวเลข 13 หลัก" placeholder="สำหรับผู้ถือบัตรประชาชนไทย">
+              </div>
+
+              <div class="field">
+                <label for="passport">พาสปอร์ต / Passport</label>
+                <input class="input" type="text" id="passport" name="passport" placeholder="สำหรับชาวต่างชาติ">
+              </div>
+
+              <p class="form-hint field--full">กรอกอย่างน้อยหนึ่งอย่าง: บัตรประชาชน หรือ พาสปอร์ต</p>
+
+              <div class="field field--full">
+                <label for="nation">สัญชาติ</label>
+                <input class="input" type="text" id="nation" name="nation" list="nationList" placeholder="พิมพ์ชื่อประเทศ เช่น Thailand, Japan" required>
+                <datalist id="nationList"></datalist>
+              </div>
+
+              <div class="field">
+                <label for="email">อีเมลติดต่อ</label>
+                <input class="input" type="email" id="email" name="email" required autocomplete="email">
+              </div>
+
+              <div class="field">
+                <label for="phone">เบอร์โทรศัพท์</label>
+                <input class="input" type="tel" id="phone" name="phone" required autocomplete="tel">
+              </div>
+
+              <div class="field field--full">
+                <label for="address">ที่อยู่สำหรับออกใบเสร็จ</label>
+                <textarea class="textarea" id="address" name="address" required autocomplete="street-address"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2) ข้อมูลการเข้าพัก -->
+          <div class="form-section">
+            <h2 class="form-section__title">ข้อมูลการเข้าพัก</h2>
+            <div class="form-grid">
+              <div class="field">
+                <label for="roomNumber">หมายเลขห้อง</label>
+                <input class="input" type="text" id="roomNumber" name="roomNumber" readonly placeholder="เลือกจากหน้าห้องพัก">
+              </div>
+
+              <div class="field">
+                <label for="roomType">ประเภทห้องพัก</label>
+                <input class="input" type="text" id="roomType" name="roomType" readonly placeholder="เลือกจากหน้าห้องพัก">
+              </div>
+
+              <div class="field">
+                <label for="price">ราคา / คืน (บาท)</label>
+                <input class="input" type="text" id="price" name="price" readonly>
+              </div>
+
+              <div class="field">
+                <label for="guests">จำนวนผู้เข้าพัก</label>
+                <input class="input" type="number" id="guests" name="guests" min="1" max="4" value="1" required>
+              </div>
+
+              <p class="form-hint field--full">เติมหมายเลขห้อง ประเภท และราคาให้อัตโนมัติเมื่อกด "จองห้องพัก" จากหน้าห้องพัก หากยังว่างอยู่ <a href="rooms.html">เลือกห้องพัก</a></p>
+
+              <div class="field">
+                <label for="checkIn">วันที่ Check-in</label>
+                <input class="input" type="date" id="checkIn" name="checkIn" required>
+              </div>
+
+              <div class="field">
+                <label for="checkOut">วันที่ Check-out</label>
+                <input class="input" type="date" id="checkOut" name="checkOut" required>
+              </div>
+            </div>
+
+            <fieldset class="choice-group form-hint--spaced">
+              <legend>ประเภทวีซ่า</legend>
+              <div class="choice-list">
+                <label class="choice"><input type="radio" name="visaType" value="Visa-Free" required><span>Visa-Free</span></label>
+                <label class="choice"><input type="radio" name="visaType" value="Transit Visa"><span>Transit Visa</span></label>
+                <label class="choice"><input type="radio" name="visaType" value="Tourist Visa"><span>Tourist Visa</span></label>
+                <label class="choice"><input type="radio" name="visaType" value="Non-Immigrant Visa"><span>Non-Immigrant Visa</span></label>
+              </div>
+            </fieldset>
+          </div>
+
+          <!-- 3) การชำระเงิน -->
+          <div class="form-section">
+            <h2 class="form-section__title">การชำระเงิน</h2>
+            <fieldset class="choice-group">
+              <legend>ประเภทการชำระเงิน</legend>
+              <div class="choice-list">
+                <label class="choice"><input type="radio" name="paymentMethod" value="เงินสด" required><span>เงินสด</span></label>
+                <label class="choice"><input type="radio" name="paymentMethod" value="QR promptpay"><span>QR promptpay</span></label>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button class="btn btn--block" type="submit">ยืนยันการจอง</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">Sunshine</span>
+        <ul class="footer__links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="rooms.html">ห้องพักทั้งหมด</a></li>
+          <li><a href="order.html">จองห้องพัก</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">© 2026 Sunshine Boutique Hotel</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ใบเสร็จรับเงิน — Sunshine Boutique Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="index.html">Sunshine</a>
+      <button class="nav__toggle" type="button" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="rooms.html">ห้องพักทั้งหมด</a></li>
+        <li><a href="order.html">จองห้องพัก</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+
+      <article class="receipt">
+        <header class="receipt__head">
+          <h1 class="receipt__brand">Sunshine Boutique Hotel</h1>
+          <p class="receipt__title">ใบเสร็จรับเงิน / ยืนยันการจอง</p>
+          <p class="receipt__thanks">ขอบคุณที่เลือกพักกับเรา ขอให้เป็นวันพักผ่อนที่อบอุ่นและเป็นกันเองเหมือนอยู่บ้าน</p>
+        </header>
+
+        <div class="receipt__body">
+          <div class="receipt__info">
+            <!-- ซ้ายบน: ข้อมูลลูกค้า -->
+            <section class="receipt__customer">
+              <h2 class="receipt__heading">ข้อมูลลูกค้า</h2>
+              <dl class="info-list">
+                <div><dt>ลูกค้า</dt><dd id="bill-fullName">-</dd></div>
+                <div><dt>ที่อยู่</dt><dd id="bill-address">-</dd></div>
+                <div><dt>อีเมล</dt><dd id="bill-email">-</dd></div>
+              </dl>
+            </section>
+
+            <!-- ขวาล่าง: รายละเอียดการจอง -->
+            <section class="receipt__details">
+              <h2 class="receipt__heading">รายละเอียดการจอง</h2>
+              <dl class="info-list">
+                <div><dt>วันที่</dt><dd id="bill-date">-</dd></div>
+                <div><dt>เช็คอิน</dt><dd id="bill-checkIn">-</dd></div>
+                <div><dt>เช็คเอาต์</dt><dd id="bill-checkOut">-</dd></div>
+                <div><dt>หมายเลข</dt><dd id="bill-bookingId">-</dd></div>
+              </dl>
+            </section>
+          </div>
+
+          <table class="receipt__table" id="bill-items">
+            <thead>
+              <tr>
+                <th scope="col">วันที่</th>
+                <th scope="col">หมายเลขห้อง / ประเภทห้อง</th>
+                <th scope="col">ประเภทการชำระเงิน</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </article>
+
+      <div class="receipt__actions">
+        <button class="btn" type="button" onclick="window.print()">พิมพ์ใบเสร็จ</button>
+        <a class="btn btn--ghost" href="index.html">กลับหน้าแรก</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">Sunshine</span>
+        <ul class="footer__links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="rooms.html">ห้องพักทั้งหมด</a></li>
+          <li><a href="order.html">จองห้องพัก</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">© 2026 Sunshine Boutique Hotel</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

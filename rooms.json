@@ -1,0 +1,189 @@
+[
+  {
+    "id": 100,
+    "roomNumber": "100",
+    "floor": 1,
+    "type": "standard",
+    "typeName": "Standard",
+    "price": 2100,
+    "maxGuests": 2,
+    "image": "images/standard.jpg",
+    "description": "ห้องชั้นล่างติดล็อบบี้ เดินเข้าออกสะดวก เหมาะกับผู้เดินทางที่ต้องการความคล่องตัว พร้อมเครื่องปรับอากาศ ห้องน้ำฝักบัวน้ำอุ่น และ Wi-Fi ความเร็วสูง"
+  },
+  {
+    "id": 101,
+    "roomNumber": "101",
+    "floor": 1,
+    "type": "standard",
+    "typeName": "Standard",
+    "price": 2100,
+    "maxGuests": 2,
+    "image": "images/standard.jpg",
+    "description": "เตียงควีนไซส์ ระเบียงเล็กมองเห็นสวนหน้าโรงแรม ลมโกรกเย็นสบายตลอดวัน พร้อมเครื่องปรับอากาศ ห้องน้ำฝักบัวน้ำอุ่น และ Wi-Fi ความเร็วสูง"
+  },
+  {
+    "id": 102,
+    "roomNumber": "102",
+    "floor": 1,
+    "type": "standard",
+    "typeName": "Standard",
+    "price": 2100,
+    "maxGuests": 2,
+    "image": "images/standard.jpg",
+    "description": "ตกแต่งโทนไม้อบอุ่น มีมุมนั่งเล่นริมหน้าต่างสำหรับจิบกาแฟยามเช้า พร้อมเครื่องปรับอากาศ ห้องน้ำฝักบัวน้ำอุ่น และ Wi-Fi ความเร็วสูง"
+  },
+  {
+    "id": 103,
+    "roomNumber": "103",
+    "floor": 1,
+    "type": "standard",
+    "typeName": "Standard",
+    "price": 2100,
+    "maxGuests": 2,
+    "image": "images/standard.jpg",
+    "description": "ห้องเงียบสงบอยู่ด้านในอาคาร เหมาะกับการพักผ่อนและนอนหลับสนิท พร้อมเครื่องปรับอากาศ ห้องน้ำฝักบัวน้ำอุ่น และ Wi-Fi ความเร็วสูง"
+  },
+  {
+    "id": 104,
+    "roomNumber": "104",
+    "floor": 1,
+    "type": "standard",
+    "typeName": "Standard",
+    "price": 2100,
+    "maxGuests": 2,
+    "image": "images/standard.jpg",
+    "description": "หน้าต่างบานใหญ่รับแสงธรรมชาติ มองเห็นสวนเขียวร่มรื่นด้านข้าง พร้อมเครื่องปรับอากาศ ห้องน้ำฝักบัวน้ำอุ่น และ Wi-Fi ความเร็วสูง"
+  },
+  {
+    "id": 105,
+    "roomNumber": "105",
+    "floor": 1,
+    "type": "standard",
+    "typeName": "Standard",
+    "price": 2100,
+    "maxGuests": 2,
+    "image": "images/standard.jpg",
+    "description": "เตียงควีนไซส์ พร้อมโต๊ะทำงานเล็ก เหมาะกับการเดินทางทั้งพักผ่อนและทำงาน พร้อมเครื่องปรับอากาศ ห้องน้ำฝักบัวน้ำอุ่น และ Wi-Fi ความเร็วสูง"
+  },
+  {
+    "id": 106,
+    "roomNumber": "106",
+    "floor": 1,
+    "type": "standard",
+    "typeName": "Standard",
+    "price": 2100,
+    "maxGuests": 3,
+    "image": "images/standard.jpg",
+    "description": "ห้องมุมปลายชั้น เพิ่มเตียงเสริมได้ เหมาะกับครอบครัวเล็กหรือเดินทางเป็นกลุ่ม พร้อมเครื่องปรับอากาศ ห้องน้ำฝักบัวน้ำอุ่น และ Wi-Fi ความเร็วสูง"
+  },
+  {
+    "id": 200,
+    "roomNumber": "200",
+    "floor": 2,
+    "type": "suite",
+    "typeName": "Suite",
+    "price": 4200,
+    "maxGuests": 3,
+    "image": "images/suite.jpg",
+    "description": "ห้องกว้างขวางพร้อมโซฟานั่งเล่น แยกส่วนนอนและส่วนพักผ่อนชัดเจน พร้อมมินิบาร์ เครื่องชงชา-กาแฟ และของใช้ในห้องน้ำคุณภาพสูง"
+  },
+  {
+    "id": 201,
+    "roomNumber": "201",
+    "floor": 2,
+    "type": "suite",
+    "typeName": "Suite",
+    "price": 4200,
+    "maxGuests": 3,
+    "image": "images/suite.jpg",
+    "description": "ระเบียงส่วนตัวเห็นสวนเขตร้อน พร้อมเก้าอี้ไม้ให้นั่งชมวิวยามเช้า พร้อมมินิบาร์ เครื่องชงชา-กาแฟ และของใช้ในห้องน้ำคุณภาพสูง"
+  },
+  {
+    "id": 202,
+    "roomNumber": "202",
+    "floor": 2,
+    "type": "suite",
+    "typeName": "Suite",
+    "price": 4200,
+    "maxGuests": 3,
+    "image": "images/suite.jpg",
+    "description": "เตียงคิงไซส์ ผ้าม่านเนื้อลินิน และของตกแต่งงานฝีมือท้องถิ่น พร้อมมินิบาร์ เครื่องชงชา-กาแฟ และของใช้ในห้องน้ำคุณภาพสูง"
+  },
+  {
+    "id": 203,
+    "roomNumber": "203",
+    "floor": 2,
+    "type": "suite",
+    "typeName": "Suite",
+    "price": 4200,
+    "maxGuests": 3,
+    "image": "images/suite.jpg",
+    "description": "ห้องอ่างอาบน้ำแยกอิสระ ผ่อนคลายหลังวันเดินทางยาวนาน พร้อมมินิบาร์ เครื่องชงชา-กาแฟ และของใช้ในห้องน้ำคุณภาพสูง"
+  },
+  {
+    "id": 204,
+    "roomNumber": "204",
+    "floor": 2,
+    "type": "suite",
+    "typeName": "Suite",
+    "price": 4200,
+    "maxGuests": 3,
+    "image": "images/suite.jpg",
+    "description": "ห้องมุมชั้น 2 รับแสงสองด้าน มีมุมทำงานและโซฟาเบดสำหรับผู้เข้าพักเพิ่ม พร้อมมินิบาร์ เครื่องชงชา-กาแฟ และของใช้ในห้องน้ำคุณภาพสูง"
+  },
+  {
+    "id": 300,
+    "roomNumber": "300",
+    "floor": 3,
+    "type": "deluxe",
+    "typeName": "Deluxe",
+    "price": 5100,
+    "maxGuests": 3,
+    "image": "images/deluxe.jpg",
+    "description": "ห้องบนสุดวิวสวนและยอดไม้ พร้อมระเบียงกว้างและเตียงคิงไซส์ พร้อมมินิบาร์พรีเมียม ชุดชา-กาแฟ เสื้อคลุมอาบน้ำ และบริการอาหารเช้าในห้อง"
+  },
+  {
+    "id": 301,
+    "roomNumber": "301",
+    "floor": 3,
+    "type": "deluxe",
+    "typeName": "Deluxe",
+    "price": 5100,
+    "maxGuests": 3,
+    "image": "images/deluxe.jpg",
+    "description": "เพดานสูง หน้าต่างบานกว้างจรดพื้น เปิดรับแสงและวิวสวนเต็มตา พร้อมมินิบาร์พรีเมียม ชุดชา-กาแฟ เสื้อคลุมอาบน้ำ และบริการอาหารเช้าในห้อง"
+  },
+  {
+    "id": 302,
+    "roomNumber": "302",
+    "floor": 3,
+    "type": "deluxe",
+    "typeName": "Deluxe",
+    "price": 5100,
+    "maxGuests": 3,
+    "image": "images/deluxe.jpg",
+    "description": "ระเบียงส่วนตัวพร้อมเตียงนอนเล่น เหมาะกับการพักผ่อนช่วงบ่าย พร้อมมินิบาร์พรีเมียม ชุดชา-กาแฟ เสื้อคลุมอาบน้ำ และบริการอาหารเช้าในห้อง"
+  },
+  {
+    "id": 303,
+    "roomNumber": "303",
+    "floor": 3,
+    "type": "deluxe",
+    "typeName": "Deluxe",
+    "price": 5100,
+    "maxGuests": 3,
+    "image": "images/deluxe.jpg",
+    "description": "ห้องอ่างอาบน้ำแช่ตัวริมหน้าต่าง มองเห็นยอดไม้เขียวขจี พร้อมมินิบาร์พรีเมียม ชุดชา-กาแฟ เสื้อคลุมอาบน้ำ และบริการอาหารเช้าในห้อง"
+  },
+  {
+    "id": 304,
+    "roomNumber": "304",
+    "floor": 3,
+    "type": "deluxe",
+    "typeName": "Deluxe",
+    "price": 5100,
+    "maxGuests": 4,
+    "image": "images/deluxe.jpg",
+    "description": "ห้องมุมใหญ่ที่สุดของชั้น รองรับ 4 ท่าน มีมุมนั่งเล่นและระเบียงมองเห็นวิวรอบทิศ พร้อมมินิบาร์พรีเมียม ชุดชา-กาแฟ เสื้อคลุมอาบน้ำ และบริการอาหารเช้าในห้อง"
+  }
+]
